@@ -6,7 +6,6 @@ resource "aws_docdb_cluster" "main" {
   master_password         = data.aws_ssm_parameter.pass.value
   backup_retention_period = var.backup_retention_period
   preferred_backup_window = var.preferred_backup_window
-  final_snapshot_identifier  = var.final_snapshot_identifier
   skip_final_snapshot     = var.skip_final_snapshot
   db_subnet_group_name    = aws_docdb_subnet_group.main.name
   kms_key_id              = data.aws_kms_key.key.arn

@@ -2,7 +2,6 @@ variable "env" {}
 variable "engine" {}
 variable "backup_retention_period" {}
 variable "preferred_backup_window" {}
-variable "final_snapshot_identifier" {}
 variable "skip_final_snapshot" {}
 variable "engine_version" {}
 variable "subnet_ids" {}
