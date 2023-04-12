@@ -11,5 +11,4 @@ variable "storage_encrypted" {
 }
 variable "no_of_instances" {}
 variable "instance_class" {}
-
 variable "final_snapshot_identifier" {}
